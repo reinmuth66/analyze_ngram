@@ -1,0 +1,9 @@
+{
+  "file": "data/filename",
+  "chars": ["analyze_chars"],
+  "groups_list": [["same_finger_group"]],
+  "exclude_chars": [],
+  "auto_exclude_chars": true,
+  "calc_unigram": true,
+  "calc_bigram": true
+}

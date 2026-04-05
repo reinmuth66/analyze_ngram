@@ -131,9 +131,9 @@ def main():
         config = json.load(f)
 
     file = config["file"]
-    chars = config["chars"]
-    groups_list = config["groups_list"]
-    exclude_chars = config["exclude_chars"]
+    chars = list(config["chars"])
+    groups_list = [list(g) for g in config["groups_list"]]
+    exclude_chars = list(config["exclude_chars"])
     auto_exclude_chars = config["auto_exclude_chars"]
     calc_unigram = config["calc_unigram"]
     calc_bigram = config["calc_bigram"]

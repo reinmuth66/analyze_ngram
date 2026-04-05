@@ -44,19 +44,19 @@ gunzip -c data/ngrams-all.tsv.zip > data/ngrams1.tsv
 uv run scripts/analyze_ngram.py
 ```
 
-#### `config.json` の設定項目
+#### config.json の設定項目
 
 | キー | 型 | 説明 |
 |------|----|------|
 | `file` | string | 入力ファイルのパス |
 | `chars` | string | 解析対象の文字を連結した文字列 |
 | `groups_list` | string の配列 | 同一指などでグループ化する文字の組 |
-| `exclude_chars` | string | bigramの集計から除外する文字。空欄で除外なし |
+| `exclude_chars` | string | bigramの集計から除外する文字。 |
 | `auto_exclude_chars` | bool | `true` にすると `chars` の末尾以外を自動で `exclude_chars` に設定 |
 | `calc_unigram` | bool | unigram頻度を出力するか |
 | `calc_bigram` | bool | bigram頻度を出力するか |
 
-#### `config.json` の例
+#### config.json の例
 
 ```json
 {

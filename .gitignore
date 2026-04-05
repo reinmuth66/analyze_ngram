@@ -1,9 +1,6 @@
-.DS_Store
 .venv
 .python-version
 pyproject.toml
 uv.lock
-data/ngrams1.tsv
-data/input.txt
-data/output.txt
+data
 scripts/config.json
